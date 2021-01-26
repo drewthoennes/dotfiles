@@ -20,7 +20,7 @@ if [[ -e /etc/profile.d/bash_completion.sh ]]; then
 fi
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 
 # Aliases
 alias ga="git add "
@@ -30,6 +30,8 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gp="git push"
+alias gpo="git push origin"
 alias gs="git status"
 alias gsco="git sparse-checkout"
 alias gr="git remote -v"

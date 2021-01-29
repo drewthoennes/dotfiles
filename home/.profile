@@ -8,7 +8,7 @@ GREEN='\e[1;32m'
 
 ### Colored shell, grep, ls, etc.
 export PS1="\[$CYAN\]\u\[$GREEN\] \w \[\e[$GREEN\]> \[\e[0m\]"
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -26,8 +26,10 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 alias ga="git add "
 alias gaa="git add ."
 alias gb="git branch"
+alias gbc=" gb --show-current"
 alias gco="git checkout"
 alias gcob="git checkout -b"
+alias gcod="git checkout develop"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gp="git push"

@@ -1,1 +1,2 @@
-" Configure your vim settings here
+set hlsearch
+set number

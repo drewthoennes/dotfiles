@@ -36,6 +36,10 @@ alias gp="git push"
 alias gpo="git push origin"
 alias gs="git status"
 alias gsco="git sparse-checkout"
+alias gst="git stash"
+alias gstd=git stash drop"
+alias gstl="git stash list"
+alias gstp="git stash push"
 alias gr="git remote -v"
 alias grb="git rebase -i HEAD~"
 
@@ -43,3 +47,8 @@ alias grepr="grep --color -nir"
 alias grepri="grep --color -nir"
 
 alias sshc="ssh coder.alpine"
+
+# Functions
+gaf() {
+  ga "**/*/$1"
+}

@@ -50,6 +50,7 @@ complete -F gd _git_diff
 alias gdc="git diff --cached"
 alias gp="git push"
 alias gpo="git push origin"
+alias gpoc="git push origin $(gbc)"
 alias gs="git status"
 complete -F gs _git_status
 alias gsco="git sparse-checkout"

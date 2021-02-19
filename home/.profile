@@ -1,3 +1,11 @@
+# External assets
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+else
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+  . ~/.git-completion.bash
+fi
+
 # Exports
 export EDITOR=/usr/bin/vim
 
@@ -23,18 +31,23 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 
 # Aliases
-alias ga="git add "
+alias ga="git add"
+__git_complete ga _git_add
 alias gaa="git add ."
 alias gb="git branch"
+__git_complete gb _git_branch
 alias gbc=" gb --show-current"
 alias gco="git checkout"
+__git_complete gco _git_checkout
 alias gcob="git checkout -b"
 alias gcod="git checkout develop"
 alias gd="git diff"
+__git_complete gd _git_diff
 alias gdc="git diff --cached"
 alias gp="git push"
 alias gpo="git push origin"
 alias gs="git status"
+__git_complete gs _git_status
 alias gsco="git sparse-checkout"
 alias gst="git stash"
 alias gstd="git stash drop"

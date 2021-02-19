@@ -32,22 +32,26 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Aliases
 alias ga="git add"
+complete -F ga _git_add
 __git_complete ga _git_add
 alias gaa="git add ."
 alias gb="git branch"
 __git_complete gb _git_branch
+complete -F gb _git_branch
 alias gbc=" gb --show-current"
 alias gco="git checkout"
 __git_complete gco _git_checkout
+complete -F gco _git_checkout
 alias gcob="git checkout -b"
 alias gcod="git checkout develop"
 alias gd="git diff"
 __git_complete gd _git_diff
+complete -F gd _git_diff
 alias gdc="git diff --cached"
 alias gp="git push"
 alias gpo="git push origin"
 alias gs="git status"
-__git_complete gs _git_status
+complete -F gs _git_status
 alias gsco="git sparse-checkout"
 alias gst="git stash"
 alias gstd="git stash drop"
